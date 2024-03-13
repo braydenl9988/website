@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2024 by braydenl9988 (http://jsbin.com/furufiv/7/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Brayden Louie|Official Website</title>
+<style id="jsbin-css">
+ body{
+  font-family: 'Helvetica Neue', sans-serif;
+}
+.header {
+  position: ;
+  padding: 20px;
+  text-align: center;
+  background: white;
+  color: black;
+  font-size: 20px;
+  font-weight: 300;
+}
+.menuButton{
+  float:left;
+}
+.name a{
+   text-decoration: none;
+  color: #000000
+}
+.line1 {
+  border-radius: 20px;
+  top: 10px;
+  width: 23px;
+  height: 4px;
+  background-color:#707070 ;
+  margin: 3px 5px;
+}
+.line2 {
+  border-radius: 20px;
+  top: 10px;
+  width: 23px;
+  height: 4px;
+  background-color: #707070;
+  margin: 3px 5px;
+}
+.line3 {
+  border-radius: 20px;
+  top: 10px;
+  width: 23px;
+  height: 4px;
+  background-color: #707070;
+  margin: 3px 5px;
+}
+.overlay {
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  text-align: center;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 300;
+  color: #707070;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #000000;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 5px;
+  left: 25px;
+  font-size: 45px;
+}
+img{
+max-width:100%;
+  max-height:100%;
+}
+
+.firstBanner{
+  position:relative;
+  text-align: center;
+}
+.imageBanner{
+  filter: brightness(60%) 
+}
+.welcomeText{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  font-weight: 300;
+}
+
+.hello{
+  font-size:30px;
+  letter-spacing: 0.1em;
+}
+
+.subLine{
+  font-size: relative;
+}
+
+.aboutButton{
+  position: relative;
+    display: inline-block;
+    padding: 6px 10px;
+    line-height: normal;
+   text-decoration: none;
+  border: solid;
+  border-width: 1px;
+  background-size: 100% 200%;
+    background-image: linear-gradient(to top, white 100%, transparent, 50%);
+   transition: 0.2s;
+  color: white;
+}
+
+a.aboutButton:hover{
+color: black; 
+  background-color: white;
+   background-position: 0% -100%;  
+}
+
+.photosText{
+  font-weight: 300;
+  letter-spacing:0.1em;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.imagesrow1{
+  float: left;
+  width: 33%;
+  white-space: nowrap;
+  display: block;
+}
+.imagesrow2{
+  width:33%;
+  float: left;
+  white-space: nowrap;
+  display: inline-block;
+  clear: left;
+}
+
+.morePhotos{
+  text-decoration: none;
+  color: black;
+  width: 33%;
+  text-align: center;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 0px;
+    line-height: normal;
+   text-decoration: none;
+  border: solid;
+  border-width: 1px;
+  background-size: 100%;
+   transition: 0.3s;
+  font-weight: 300;
+  letter-spacing: 0.06em;
+}
+
+a.morePhotos:hover{
+  background-color: white;
+color: white; background-color: black;
+    background-position: 0% -100%; 
+}
+
+.bottomBar{
+  background-color: black;
+}
+.bottomBar a{
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  padding:;
+  display: block;
+  width: 100%;
+  padding: 1rem 2rem;
+}
+</style>
+</head>
+<body>
+<!--header-->
+  <div class="header">
+    <!--menu button that transforms page to slide menu-->
+    <div class="menuButton">
+    <span onclick="openNav()">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+    </span>
+    </div>
+      <div class="name">
+        <a href="https://output.jsbin.com/furufiv">
+          Brayden Louie | Official Website
+        </a>
+    </div>
+  </div>
+  
+<!--slide menu-->
+ <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#" class="about">ABOUT</a>
+    <a href="#" class="photos/videos">PHOTOS/VIDEOS</a>
+    <a href="#" class="contact">CONTACT</a>
+  </div>
+</div>
+  </div>
+
+<!--image banner right under header-->
+<div class="firstBanner">
+  <div class="imageBanner">
+    <img src="https://lh3.googleusercontent.com/HuN4g6IxLRRpCuyduf345KXQR9I0hTEn1qVdfICgVup30mFuDlOaw8uo_kDwBF-qr82bjGGRtrrl5KKYPzYkziVR-AhEtgAFijWyh1j0ijhS_gkD7h3DjrMw-wsTKqfW2nVZQHG7r_tryYNBaZZlQLW3_Lsd5WvVH7NzIgjo3NgFPGfCsqBz89mVThiETxsklka2uiR79rEje01nh5RcyTVp78c6cTUVZcIBYbOjGITkorVdNNjAMSneSP7GhqjCnpbh4-ADjJuMk-TyMTSmQ7GdQAgyiAVe_ohEeadjDWANutX__fadJDEHpLTrfNUVc4SROzqwB-F4t7uX63q8khwbquwGD5fWKsjNCyh5jDDvc7zgLvmZWEf7pXMwxep9p6rGza4J04wWwN207lAG306EgOdWZ7eWAmTeXaqYXTUEjdC1IrM52TNbhZaoEAnZRd0o7a7z_SLk8rAjxXLMOmfI1xhKI-d4FriATjgF8Rav7WLZhdqRELnlB9pdjSID-LN5DDyJaa4cNtECiTowAxPVxGtBBa0HxzNwjJ9oTa5i_C1uM57KrFmNEv8qXbbtVcncocWb5ttCMLf7VjcC9pNf1gX48a4IiAfPz6Iv0ZFxzGfFB7gLwQOYkA_qrdhX4kr_jFOE0yllMIOYmAZbue6aUtIpEqXW1_ktOdLcj4gFErCtqluo97Y2Avwe8tcW9WdKN21kqmtVGWtPrYQ_Ve2d=w3288-h1564-no?authuser=0">
+  </div>
+  <div class="welcomeText">
+    <p class="hello">Hello!</p>
+    <p class="subLine">Welcome to the Official Website of Brayden Louie! Here you can find my work and learn about me!</p>
+    <a href='#' class="aboutButton">About Me&#8594</a>
+  </div>
+  </div> 
+
+<!--photos and videos section-->
+    <p class="photosText">Photos</p>
+    <div class="imagesrow1">
+    <img src='https://lh3.googleusercontent.com/sMRGPV7XzTIBFc8sdQJeWm6kgkWUT0qDY4hBWPo8Zjzx-gdyBs8oHQ3VuPPrSDxhj-17cV7ROZwKnTVvwtbBuWtensIZ5hNKPn3mgeCSLQ83focwYPfhnd4v_Y0jjXbHRhAZJxTELq-8gw9SUD01ow-EC32PFwTRdI5r3wI6CFxJs41wMuq6jjGVfKzFSIV3jUekUraeCICwqLOkz42LLOJZt9puo0KITfxjJt7LXXbPvNA-OBXY_jtHvW6YYSTAu4pV_s6jDRceUGtxeafyg2RjilEXmRLH8pvGm6yxBLcXoiT3Xvo_WyVDwXvWNP-no8fHJjc5MDlH4KUdUt_ywbYimSm5MNYANb9c4W20p-Ltwk3oM3e8E5zH3rOaGT59juRKVLqvAEG5bauUzatj5oiltLDC4CzsUKw6b6wNelHIMu0rjiGG921qI3fMyUVSOImbtwiLz8rJ53vqEYxwH3AkZb9h69S_VjpjS3i8GZytzgiP4oFATJoiAb6SHIXqZnQFJUpmakWWPxnfH8zOJebnE6-NMzUVwbdDAGiHP0D4MwiPEIhz00Q4Ym7iro_CmprZTOAVwAzACFdgS9TxMoNEqObJ79BDhqfD-7ErTIlZL1C8KbhjDsejdC9jpVhkF28XA61rILCXrkwewG5_S49tsCC85c6og50Q8jA4Nn9tLz9IpYKupq9RmM6yYdul3WUpKKXy10JrwkV1vgW61vUN=w2626-h1752-no?authuser=0' class="image1">
+    <img src='https://lh3.googleusercontent.com/FxdDNKA6cklhYYSdEWWKXFSLxlzvawHbRfLVIfEWYG0n_8HPRIPSip5HTUny26yS3xuzFP-aCK3Z0g8NKm3gsmUglmftaaeu4QerbiivSvE0MBUs0rHHh3V__L0tsdaTjRD5unUNkLbJizPHqU8ztsw2S4bPnqZ340dH7wcNDv-AvHuZchX9oaGt5Ky6XXL4LBI9tb-dkJ2Bw4WFwjuER2hwHPBGnbttgWx_7ty_8iOCG2tfryM6QXUeKuGhJYok4G0qgcCa62t_6EbOlt6ohFBpUweImMPKWwxZ2I5JfOIcJOuZjnNJbFoKjBo8HiB6r-CyPQ07p6Kl10BKpjdWF3I5nOMIBGyv86wZPoHPpyVw_gwxoQrEPl30axl869N7YdGVLUUnjx0m0gZPv7JeFvTFkUKFTYRZ-ElOjsbWLqiW9chE3accCCvZlTgrj4xk8ydw2-TieWfBaxwsF2sETn5KsR35FOoykbAsgQPYCZvpoizL0WYJOVIfpzTGYoDkLifmh_8jfcm-UUW-rNgd0sEnQm4RZHK2NdlybMRZaeG9m_qsKYmDxRX2tKR_YZ_2yGNLk2C0fZ00nmBBaNQQtMEXHDz5hC_AVHk89IbkGlM1kF28w9Z3lPocwe37EpiJ6VDelvh0TgD6j4wGRPhA87AGxYtb7qw5I77h_aZuNe8b7hYE_xzHSM_-qoR46N3Kraxe3EnvOyoDALagH0HzI-z8=w2626-h1752-no?authuser=0' class="image2">
+   <img src='https://lh3.googleusercontent.com/-6o6VYfzvtb_R_e56tQggNgXEEKdcJ826Qw4D5JE3_--2Fdeu-lBpEoeTJg3QkoXe2Wm3__VYV96LhF236xyPF_yu3-m_pMAM9uchAaK6PnXSTa_XVLUFL0Gyz7mlYNjpH6bARzezVVG93-jG5MdMRTmODjbFyZv6RQLNbrUJziSPgf4YYn3wcEL11X8vl4YDwh_Q2crP9HDzVK1sQ3d1MKvSDbWJaUptrtW94PLO0914NcaelAQ7EMa6SRI4MVukSC6GAQklY3gxSzJ17mKtogBUhuZ_GDJzoLKfxjHeZGwx6Axt9fBtBaSJwEhCEA-_d2EEw5Z8n7xQOGZ_u9BZ12ESHhGZMHBpoqqW--IP0y7I91bnjHAt7HTU2bu_WlskS5BvdQTgrNopphEEgOmsBKEvFvlf6J8DLh7X-UDn1PKgQkASv_lJHLZCrQC72njXXoTLMtSYU0U-I5gcHtv4nDFsSp1J_aKgiB4ouu663rUEz-lDkYQZjVEFxxZQ7eahntr5ePFwz7H-oI5D81M7UuNAZHwfmE3vimriSIMwxZCcU-jzgoGJUuBtpefb2HaXLxdPdet_kwZGCjvyRJi4RITZBHO7MpeuUvQyZmB1z9faFUk0EFIY0MK0nrJR8AMEYClPqcPqX-ba4JdC3XxTPgL-6ZrAsbVo-OtHsrQsoDKz8YfbPdvTVOG_CMFjInAjOXnOsemB_VgJzwJSX6eZ9--=w2626-h1752-no?authuser=0' class="image3">
+    </div>
+<div class='textandimagerow2'>
+  <div class="imagesrow2">
+    <img src='https://lh3.googleusercontent.com/fife/ABSRlIopdo_ogT6FZLxU3YGyAtPfdo9Fg-2Hik16h1wjFiBUeEdpsa5tF3X4zQwdRAq6ermRpQ6SunI7iqs3jMtQsEgKCYpemMJRRy1MPeFKricfSQjTDce2l7eyqFA55HXgOr17poDMw3jPEQWS__4l0xBiaJ9D0NuPGeOVI2lTLDyMtDVIo-MgP-q96nRcxunfSgQwAgxenvRenXP_QzV--K-isTnLBWsm1NWU8umZTh-C_G6prBUO5Pwh1MQHn9I5ZzJKkCYEfXYqE9hCURTSrSMpjNL4dSOqlRVQrp_gCrC57due6R4EMHKS0GOTsr5CWXu13V7S_SZ-l1-3BTznRhc3UZRgVPFW_9WnEJ_0vD-UBq61NB8qPHxwdkeEviNmQYg3zdwMIzVw1Jgkemr9J1F_53Eewk0cghhEQ5CfDzRbuQmY9tlPZD7oFWlKz0fXXlE7k6l7eMK4OiNkfWgysbkIlNrrJKVq54-q_3vjMipzRRyTAG7LLyKYp_E3VQyzPKvce0adM9dT4Zc-MMK9arR7x7rkPS1Up_e00y_NtB4r_K58zZ7V2KOipklKdAB8N6L05FaCp7DFl5MsxLt37soNp8TJDV0M0rLJKxctufAC2RL6RzlkViTVDizpxfSJpSa2t13L5HdyhiopmYDQIKVmrp6g2yNBi4Ub-6tVQLaidnbU4SJ11vZ1XimQn_1zotgxDxhZGcnlhjbQAVKmKphnT13xhi0QI0YiVA=s2626-w2626-h1752-no?authuser=0' class="image4">
+    <img src='https://lh3.googleusercontent.com/fife/ABSRlIrMx2vxQ-DvJBS5lXTRnyT38oFJN1RxY17ukCtwYtBfmLJnjx-UO4SbQSSGrE3zcE-C7KlH0oUdUOnUCjYMmt1zv3-AwG3Hn8nDKxucQnvmTBcYy1rDRQVpuUQc2j-ljqCQp340dqd8CE1L91Crfze5U4pukxHo-V7SH0oTnQ3VYAoQZcw6umr0v8oyzQ1IEMUfsGPWIuD50vzOfw1zsZ6uadavqOt6fC74Ze6xHJiGR1-yxRdB7W5XqVJ_-Bgmhr7ijo_E51FVznLKQOkBgzY9-Ojki0vXf6cFNvM9Y4bDs7BxgRk-2_Ysm4SkgG6EG5UKuL5Q95kbrt9vWxlyAV7zuE-p1xt2RizZAnWan8Zd61KAmPH_Wx5D--qTCqFaBnWulSh_lCAckCLfvEEb1WQep8SrNyIJYmRuRZ9qH6fZS2jYp1kS3MtMjw97_G40sZDKMSLfmSh9hPkcj6jzevAZrQdM810SkGgH1XZuIm9cnW7w7FW3lMHFsYMWLYq1TrgxZvznjoYjzDQCjPRdAXL_eKR8NBA2sKLE7QEi5YL0df5qok1lbUjfmT5wrrNJkeaDmehd8hZsNTsV1DXX1L3Y3j462iSQ4bsz70Ww1_cOHLyVcCTli2uqvo8LnvrjZqm1DCt_q9wTtZH3nhSJfIzEKHpSGwC14Knld1my7dDD8YlSuJOpO-L7hbBPBfW9plTRhCruNAA-88N3agne2PA_0CxnAHcbVu8ccQ=s2626-w2626-h1752-no?authuser=0' class="image5">
+    <img src='https://lh3.googleusercontent.com/fife/ABSRlIpV_l-x3hv0ljixv8lyDLcwfmyRbfJwpQtBXhUm8qjBp4kC7kP33PRmscboKE40lHvi6ZUB3U6UulFvMmWsEFV1y0ld7tIJnLywASeBhT2SUkE7Q3pd6yq79SWU7lF96NcMdTQSgYdtJQYPxeIlcar3fMEesYJyUbu-HSFMvXYxbYKUOZrhdUQf2-JB9VmwakLQ9mT-UHq1S08QW79Ac0shwEA8TTIL2w5jBEvU0ocIw72V5LpkjOdQT4xpjwzFBk0ODJkR0WGuZ-EkZ6j7av3wqWtzKll2gFbVIBf8YqTTMrac-lHm8IJZhE7yLajChMkODL32uK3bMN8V9X-I-YhLQsbpmpSQz0xiBYAUxu0JDcy1ZIQssbsaa0oTaV4FWwW43erdAsKI4tiM4KanASYiOjRJocd5-OHGc9kvRE8fvc6mQPaJ1Zp00K69dAvhCZ2YTZuG9lgkFthDAuLrmhZMz4Uo8DY9_gp_HqUNLZaPyLt6taxcD3u2RSrXKYz6dYibL3WzRRpOW06XZk9DmIB9lDCAG1dMfCMHvy7dhTMIlPRaGL0JAKvlBkcgsIrWAgxQB6LfnpeCJYBixD_1_IGq_XPdeLlOG_MBZjn7dj6pkGLmMDOIXPdEa1U89tL5Q4qbctMssnAVJ6pgUU1D-eDP7h0xr5N9Jw9hMjXcfVjAL8qgaDi0IQ-NyukVCfJBnVyitdnpEZ7ZYlCCCpBLYxX_uZ6BArt44C2cMg=s2626-w2626-h1752-no?authuser=0'>
+  </div>
+ <div class='morePhotosButton'><a href="#" class='morePhotos'>More Photos&#8594</a>
+    </div>  
+  
+ <footer class='bottomBar'>
+   <ul>
+     <li>home</li>
+   </ul>
+ </footer>
+<script id="jsbin-javascript">
+//dropdown menu animation
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+</script>
+</body>
+</html>
